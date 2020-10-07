@@ -33,6 +33,11 @@ Bônus:
 Boa sorte! Esperamos dê match!
 
 
+### :rocket: Local setup
+
+1. `yarn install`
+2. `yarn ios` ou `yarn start`
+
 
 ## :mailbox_with_mail: Entrar em contato!
 
