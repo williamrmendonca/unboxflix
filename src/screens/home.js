@@ -11,12 +11,6 @@ import ListMovies from '../componets/ListMovies'
 import ListSeries from '../componets/ListSeries'
 
 // import { getMovies } from '../service/api';
-import dataSection01 from '../data/section01'
-import dataSectionMyList from '../data/sectionMyList'
-import dataSectionArtistsList from '../data/sectionArtistsList'
-import dataSectionRecommendedList from '../data/sectionRecommendedList'
-import dataSectionAddList from '../data/sectionAddList'
-
 
 export default function Home({ navigation }) {
 
@@ -122,22 +116,11 @@ export default function Home({ navigation }) {
                                     source={require('../assets/logo.png')}
                                 />
                             </View>
-                            {/* <View style={styles.searchBoxContainer}>
-                                <TextInput
-                                    placeholder='Procurar filmes ou séries'
-                                    placeholderTextColor='#666'
-                                    style={styles.searchBox}
-                                />
-                                <Feather name='search' size={22} color='#666' style={styles.searchBoxIcon} />
-                            </View> */}
                             <View>
                             <View style={styles.titleContainer}>
                                 <Text style={styles.h1}>Próximos filmes a lançar</Text>
                             </View>
 
-                                {/* <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold', marginLeft: 15, marginVertical: 10}}>Top </Text>
-                                <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold', marginLeft: 15, marginVertical: 10}}>Lives</Text>
-                                <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold', marginLeft: 15, marginVertical: 10}}> da Semana</Text> */}
                             </View>
                             <View style={styles.caroselContentContainerView}>
                                 <Carousel 
@@ -153,8 +136,6 @@ export default function Home({ navigation }) {
                                     separatorWidth={-15}
                                     
                                     onSnapToItem={(index) => {
-                                        // console.log(index);
-                                        // carouselRef.current.scrollToIndex(index);
                                         setBackgroundData({
                                             uri: `https://image.tmdb.org/t/p/w440_and_h660_face${data.results[index].poster_path}`,
                                             bg:  `https://image.tmdb.org/t/p/w370_and_h556_multi_faces${data.results[index].backdrop_path}`,
@@ -189,38 +170,6 @@ export default function Home({ navigation }) {
                 </View>
 
                 <View style={{marginHorizontal: 14}}>
-                    {/* <Text style={styles.h1}>
-                        Continue Assistindo
-                    </Text>
-                    <ImageBackground
-                    source={{uri: `https://image.tmdb.org/t/p/w440_and_h660_face${data.results[0].poster_path}`}}
-                    style={{height: width*1.4, width: '100%', backgroundColor: '#000'}}
-                    resizeMode='stretch'
-                    >
-                        <Text style={{color: '#fff', padding: 14, fontSize: 24 }}>
-                            {data.results[0].title}
-                        </Text>
-                        <View style={{position: 'absolute', top: (width*1.4)-15,height: 15, width: '100%', backgroundColor: '#000', opacity: 0.7}} />
-                        <LinearGradient
-                        colors={['#01ADB9', '#E40055']}
-                        start={[0.2,0.2]}
-                        style={{
-                            position: 'absolute',
-                            left: 0,
-                            top: (width*1.4)-15,
-                            height: 15,
-                            width: '30%',
-                            opacity: 1, 
-                            borderRadius: 7
-                        }}
-                        />
-                        <TouchableOpacity 
-                        style={{...styles.palyIconContainer, position: 'absolute', top: '60%', right: '40%'}}
-                        onPress={() => navigation.navigate('Recents')}
-                        >
-                            <FontAwesome5 name='play' size={22} color='#E40055' style={{marginLeft: 4}} />
-                        </TouchableOpacity>
-                    </ImageBackground> */}
 
 
                     <ListMovies title='aventura' genres='12' />
@@ -234,86 +183,6 @@ export default function Home({ navigation }) {
                     <ListMovies title='terror' genres='27' />
 
                     <ListMovies title='fantasia, animação e família' genres='14,16,10751' />
-
-
-                    {/* <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', marginTop: 8, marginBottom: 8}}>
-                        <Text style={{color: '#fff', fontSize: 24, fontWeight: 'bold'}}>Minha Lista</Text>
-                    </View>
-                    <FlatList
-                    style={{marginBottom: 30}}
-                    data={myList}
-                    horizontal={true}
-                    decelerationRate="fast"
-                    renderItem={({item}) => {
-                        return(
-                            <TouchableOpacity style={{marginRight: 8}}>
-                                <ProgressiveImage source={{uri: item.image}} style={{height: 165, width: 110, borderRadius: 10}} />
-                            </TouchableOpacity>
-                        )
-                    }}
-                    /> */}
-
-                    {/* <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', marginTop: 8, marginBottom: 8}}>
-                        <Text style={{color: '#fff', fontSize: 24, fontWeight: 'bold'}}>Artistas</Text>
-                        <Text style={{color: '#fff', fontSize: 14, fontWeight: 'normal', opacity: 0.5}}>Ver Todos</Text>
-                    </View>
-                    <FlatList
-                    style={{marginBottom: 30}}
-                    data={artistsList}
-                    horizontal={true}
-                    renderItem={({item}) => {
-                        return(
-                            <TouchableOpacity style={{marginRight: 16}}>
-                                <Image source={{uri: item.image}} style={{height: 200, width: 200, borderRadius: 10}} />
-                                <View style={{position: 'absolute', height: 7, width: '100%', backgroundColor: '#01ADB9', opacity: 1}} />
-                                <FontAwesome5 name='play' size={38} color='#E40055' style={{position: 'absolute', top: '45%', left: '45%', opacity: 0.9 }} />
-                                <Text style={{color: '#E40055', fontSize: 16, fontWeight: 'bold', position: 'absolute', top: '88%', left: 0, height: 32, width: '100%', textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.7)', opacity: 0.9 }}>{item.name}</Text>
-                            </TouchableOpacity>
-                        )
-                    }}
-                    />
-
-
-                    <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', marginTop: 24, marginBottom: 8}}>
-                        <Text style={{color: '#fff', fontSize: 24, fontWeight: 'bold'}}>Recomendados</Text>
-                        <Text style={{color: '#fff', fontSize: 14, fontWeight: 'normal', opacity: 0.5}}>Ver Todos</Text>
-                    </View>
-                    <FlatList
-                    style={{marginBottom: 30}}
-                    data={recommendedList}
-                    horizontal={true}
-                    renderItem={({item}) => {
-                        return(
-                            <TouchableOpacity style={{marginRight: 16}}>
-                                <Image source={{uri: item.image}} style={{height: 200, width: 200}} />
-                                <View style={{position: 'absolute', height: 5, width: '100%', backgroundColor: '#01ADB9', opacity: 0.8}} />
-                                <FontAwesome5 name='play' size={38} color='#E40055' style={{position: 'absolute', top: '45%', left: '45%', opacity: 0.9 }} />
-
-                            </TouchableOpacity>
-                        )
-                    }}
-                    />
-
-                    <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', marginTop: 24, marginBottom: 8}}>
-                        <Text style={{color: '#fff', fontSize: 24, fontWeight: 'bold'}}>Adicionados Recentemente</Text>
-                        <Text style={{color: '#fff', fontSize: 14, fontWeight: 'normal', opacity: 0.5}}>Ver Todos</Text>
-                    </View>
-                    <FlatList
-                    style={{marginBottom: 30}}
-                    data={myList}
-                    horizontal={true}
-                    renderItem={({item}) => {
-                        return(
-                            <TouchableOpacity style={{marginRight: 16}}>
-                                <Image source={{uri: item.image}} style={{height: 200, width: 200}} />
-                                <View style={{position: 'absolute', height: 5, width: '100%', backgroundColor: '#01ADB9', opacity: 0.8}} />
-                                <FontAwesome5 name='play' size={38} color='#E40055' style={{position: 'absolute', top: '45%', left: '45%', opacity: 0.9 }} />
-
-                            </TouchableOpacity>
-                        )
-                    }}
-                    /> */}
-
 
                 </View>
             </ScrollView>

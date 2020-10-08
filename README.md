@@ -33,7 +33,7 @@ Bônus:
 Boa sorte! Esperamos dê match!
 
 
-### :rocket: Local setup
+## 📥 Instalação e execução
 
 1. `yarn install`
 2. `yarn ios` ou `yarn start`
