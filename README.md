@@ -18,8 +18,11 @@ Olá, tudo bem?
 Você acaba de receber o convite para mais uma etapa do nosso processo seletivo. Preparamos um pequeno desafio para conhecer um pouco mais dos seus conhecimentos.
 #FICAADICA Siga as instruções abaixo:
 DESAFIO – REACT NATIVE
+
 ✓ É mais importante qualidade de código do que o desafio 100% feito;
+
 ✓ Se não der tempo de fazer todas as funcionalidades, não tem problema nenhum. A ideia é validar a arquitetura, solução de problemas, testes, qualidade do código e etc;
+
 ✓ Você poderá utilizar bibliotecas externas.
 Utilizando a API do TheMovieDB (https://developers.themoviedb.org/3/getting- started/introduction), faça uma aplicação semelhante ao Netflix que tenha:
 Home:
@@ -31,6 +34,42 @@ Bônus:
 * Fazer uma home para séries, com as mesmas funcionalidades. * Mostrar os vídeos disponíveis na tela de detalhes.
   
 Boa sorte! Esperamos dê match!
+
+## :rocket: Tecnologias
+
+-  [React native](https://reactnative.dev/)
+-  [React.js](https://pt-br.reactjs.org/)
+-  [Expo](https://expo.io/)
+-  [TypeScript](https://www.typescriptlang.org/) [implementar]
+-  [React-icons](https://react-icons.netlify.com/)
+-  [Styled-Components](https://styled-components.com/) [implementar]
+-  [Axios](https://github.com/axios/axios)
+-  [react-native-gesture-handler](https://github.com/software-mansion/react-native-gesture-handler)
+-  [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated)
+-  [expo-localization](https://docs.expo.io/versions/latest/sdk/localization/)
+-  [i18n-js](http://i18njs.com/) [implementar]
+
+## 💻 Sobre o projeto
+
+Recriar a interface do [Netflix](https://www.netflix.com/) como forma de aprendizagem e treinar as skills perante o uso de React Native.
+
+Todos os dados dos catálogos como título, descrição, capa, foto de background e avaliação foram extraídos ao usar a [API TMDb](https://www.themoviedb.org/documentation/api).
+
+### Funcionalidades
+
+- [ ] **Spinning Loading**: Efeito ao trazer os dados da API.
+
+- [ ] **Catálogo Destaque**: Selecionar um catálogo de forma aleatória e apresentá-lo na página inicial.
+
+- [x] **Listagem Sessões**: Ao consumir a API separar os catálogos em sessões.
+
+- [ ] **Efeito Menu**: Criar um efeito no background do menu conforme o scroll da tela do usuário.
+
+- [x] **Cartão Catálogo**: Apresentar um cartão com os detalhes do catálogo ao passar o mouse por cima da capa.
+
+- [x] **Listagem Carrossel**: Apresentar botões de controle para manipular a visualização dos itens da sessão.
+
+- [ ] **Listagem Infinita**: Ao chegar no final da lista dos catálogos deve-se apresentar os mesmos itens do início.
 
 
 ## 📥 Instalação e execução
