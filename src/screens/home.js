@@ -3,9 +3,8 @@ import React, {useRef, useState, useEffect} from 'react';
 import axios from 'axios'
 import { API_KEY, localeLanguageTag } from '../service/config';
 import Carousel from 'react-native-snap-carousel';
-import {FontAwesome5, Feather, MaterialIcons} from '@expo/vector-icons';
+import {FontAwesome5} from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import { NavigationContainer } from '@react-navigation/native';
 import ProgressiveImage from '../componets/utils/progressiveImage';
 import ListMovies from '../componets/ListMovies'
 import ListSeries from '../componets/ListSeries'
@@ -16,8 +15,7 @@ export default function Home({ navigation }) {
 
     const [data, setData] = useState([]);
     const [load, setLoad] = useState(false);
-    const [gallery, setGallery] = useState(dataSection01);
-    const [backgroundData, setBackgroundData] = useState({
+\    const [backgroundData, setBackgroundData] = useState({
         uri: '',
         bg:  '',
         name: '',

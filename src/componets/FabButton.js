@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { View, StyleSheet, TouchableWithoutFeedback, TouchableOpacity, Animated } from 'react-native';
-import { AntDesign, Entypo, MaterialIcons } from '@expo/vector-icons';
+import { AntDesign, MaterialIcons } from '@expo/vector-icons';
 
 
 export default class FabButton extends Component{
