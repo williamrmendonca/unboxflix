@@ -71,6 +71,9 @@ Todos os dados dos catálogos como título, descrição, capa, foto de backgroun
 
 - [ ] **Listagem Infinita**: Ao chegar no final da lista dos catálogos deve-se apresentar os mesmos itens do início.
 
+- [ ] **Listar generos**: Listar os generos do filme/série na tela de detalhes.
+
+- [ ] **Listar Avaliações**: Listar notas de avaliação nos detelhes dos filmes/séries.
 
 ## 📥 Instalação e execução
 
