@@ -75,6 +75,8 @@ Todos os dados dos catálogos como título, descrição, capa, foto de backgroun
 
 - [ ] **Listar Avaliações**: Listar notas de avaliação nos detelhes dos filmes/séries.
 
+
+
 ## 📥 Instalação e execução
 
 1. `yarn install`
