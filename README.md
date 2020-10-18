@@ -98,4 +98,4 @@ Todos os dados dos catálogos como título, descrição, capa, foto de backgroun
 
 ---
 
-Made with :coffee: and ❤️ by William Mendonça.
+Made with :coffee: and :rocket: by William Mendonça.
