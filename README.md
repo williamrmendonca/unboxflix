@@ -75,7 +75,7 @@ Todos os dados dos catálogos como título, descrição, capa, foto de backgroun
 
 - [ ] **Listar Avaliações**: Listar notas de avaliação nos detelhes dos filmes/séries.
 
-
+- [ ] **Trailer dos filmes**: Executar o trailer quando o mesmo existir.
 
 ## 📥 Instalação e execução
 
