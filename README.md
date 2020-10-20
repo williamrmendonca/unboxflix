@@ -77,10 +77,11 @@ Todos os dados dos catálogos como título, descrição, capa, foto de backgroun
 
 - [ ] **Trailer dos filmes**: Executar o trailer quando o mesmo existir.
 
+
 ## 📥 Instalação e execução
 
 1. `yarn install`
-2. `yarn ios` ou `yarn start`
+2. `yarn ios` ou `yarn android` ou `yarn start`
 
 
 ## :mailbox_with_mail: Entrar em contato!
