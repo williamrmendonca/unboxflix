@@ -77,6 +77,8 @@ Todos os dados dos catálogos como título, descrição, capa, foto de backgroun
 
 - [ ] **Trailer dos filmes**: Executar o trailer quando o mesmo existir.
 
+- [ ] **Style Guide**: Definir Style Guide global
+
 
 ## 📥 Instalação e execução
 
